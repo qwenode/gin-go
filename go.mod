@@ -1,4 +1,4 @@
-module gin-go
+module github.com/qwenode/gin-go
 
 go 1.18
 

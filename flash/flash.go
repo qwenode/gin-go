@@ -42,11 +42,11 @@ func GetInfoMessage(c *gin.Context) string {
 func getMessage(c *gin.Context, t string) string {
 	session := sessions.Default(c)
 	m := session.Get(t)
-	session.Delete(t)
-	session.Save()
 	if m == nil {
 		return ""
 	}
+	session.Delete(t)
+	session.Save()
 	return m.(string)
 }
 func setMessage(c *gin.Context, t string, message string) {

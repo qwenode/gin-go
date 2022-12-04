@@ -5,6 +5,8 @@ go 1.18
 require (
 	github.com/gin-contrib/sessions v0.0.5
 	github.com/gin-gonic/gin v1.8.1
+	github.com/go-ozzo/ozzo-validation/v4 v4.3.0
+	github.com/qwenode/gogo v1.58.0
 )
 
 require (
